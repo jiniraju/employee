@@ -15,6 +15,8 @@ urlpatterns = [
     path('edit/<str:cName>', views.edit),
     path('update/<str:cName>', views.update),
     path('delete/<str:cName>', views.delete), 
+    path("student/apply/leave/", student_views.student_apply_leave,
+         name='student_apply_leave'),
 
     #employee paths
     path('emp', views.emp),
